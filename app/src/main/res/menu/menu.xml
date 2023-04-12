@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/itemone"
-        android:title="item 1" />
-    <item
-        android:id="@+id/itemtwo"
-        android:title="item 2" />
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <item android:title="General">
+        <menu>
+            <item
+                android:id="@+id/itemone"
+                android:title="home"
+                android:icon="@drawable/home"/>
+            <item
+                android:id="@+id/itemtwo"
+                android:title="settings"
+                android:icon="@drawable/settings"/>
+
+        </menu>
+    </item>
+
+    <item android:title="logut">
+
+        <menu>
+            <item
+                android:id="@+id/itemthree"
+                android:title="log out"
+                android:icon="@drawable/logout"/>
+        </menu>
+    </item>
+    <item android:title="Share">
+
+        <menu>
+            <item
+                android:id="@+id/itemfour"
+                android:title="Share"
+                android:icon="@drawable/share"/>
+        </menu>
+    </item>
 </menu>
